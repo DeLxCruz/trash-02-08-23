@@ -1,0 +1,250 @@
+.section2 {
+    background-color: #38a3a5;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: calc(100% - 2rem);
+}
+
+.section2__skills {
+    margin-bottom: 2rem;
+}
+
+.section2__skills--title {
+    font-family: 'JetBrains Mono', monospace;
+    color: yellow;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1.75rem 0;
+}
+
+.section2__skills--cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: .75rem;
+    padding: 0 5rem;
+}
+
+.section2__cards--card1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #fff;
+    padding: .5rem 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2__cards--card2 {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: #fff;
+    padding: .5rem 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2__cards--card3 {
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: #fff;
+    padding: .5rem 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2__cards--card4 {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: #fff;
+    padding: .5rem 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2__cards--card5 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: #fff;
+    padding: .5rem 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2__cards--card6 {
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: #fff;
+    padding: .5rem 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2__cards--card7 {
+    grid-area: 3 / 2 / 4 / 3;
+    background-color: #fff;
+    padding: .5rem 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2__cards--card1:hover, .section2__cards--card2:hover, .section2__cards--card3:hover, .section2__cards--card4:hover, .section2__cards--card5:hover, .section2__cards--card6:hover, .section2__cards--card7:hover {
+    box-shadow: 0px 14px 24px 1px rgba(82,80,80,0.75);
+    -webkit-box-shadow: 0px 14px 24px 1px rgba(82,80,80,0.75);
+    -moz-box-shadow: 0px 14px 24px 1px rgba(82,80,80,0.75);
+    cursor: pointer;
+}
+
+.section2__cards--img {
+    margin: 0.5rem 0;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.section2__cards--progress {
+    display: flex;
+    gap: .5rem;
+    margin-top: 0.5rem;
+}
+
+.section2__cards--bar {
+    width: 18px;
+    height: 10px;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+}
+
+.section2__cards--text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.section2__logros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+
+.section2__logros--title {
+    font-family: 'JetBrains Mono', monospace;
+    color: yellow;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1.75rem 0;
+}
+
+.section2__logros--list {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+.section2__logros--item {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-family: 'JetBrains Mono', monospace;
+    color: #fff;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1366px) {
+    .section2 {
+        height: calc(100vh - 60px);
+    }
+
+    .section2__skills {
+        margin: 1rem;
+    }
+
+    .section2__skills--title {
+        font-size: 1.4rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .section2__skills--cards {
+        column-gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .section2__logros {
+        margin: .75rem 1rem 0 1rem;
+    }
+
+    .section2__cards--card1, .section2__cards--card2, .section2__cards--card3, .section2__cards--card4, .section2__cards--card5, .section2__cards--card6, .section2__cards--card7 {
+        padding: .5rem;
+    }
+
+    .section2__cards--img {
+        margin: 0;
+        width: 32px;
+        height: 32px;
+    }
+
+    .section2__cards--text {
+        margin-top: .5rem;
+    }
+
+    .section2__cards--text  {
+        font-weight: 600;
+    }
+
+    .section2__logros {
+        flex-direction: column;
+    }
+
+    .section2__logros--title {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .section2__logros--item {
+        margin: .6rem 0;
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section2 {
+        height: fit-content;
+        width: calc(350px - 2rem);
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    .section2 {
+        height: fit-content;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .section2 {
+        height: fit-content;
+    }
+}

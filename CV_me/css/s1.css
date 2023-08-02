@@ -1,0 +1,135 @@
+.section1 {
+    background-color: #22577a;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: calc(100% - 2rem);
+}
+
+.section1__divImg {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.section1__divImg--img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0px 14px 24px 1px rgba(52, 51, 51, 0.75);
+}
+
+.section1__datos {
+    margin: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+}
+
+.section1__datos--title {
+    color: yellow;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.section1__datos--data {
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 100;
+    font-size: 1.07rem;
+}
+
+.section1__perfil--title {
+    font-family: 'JetBrains Mono', monospace;
+    color: yellow;
+    font-weight: 700;
+    font-size: 1.75rem;
+    text-align: center;
+    margin: 1.75rem 0;
+}
+
+.section1__perfil--data {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-align: justify;
+    line-height: 1.5rem;
+    margin: 2.5rem 1rem;
+    color: #fff;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1366px){
+    .section1 {
+        height: calc(100vh - 60px);
+    }
+
+    .section1__divImg--img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .section1__datos {
+        margin: 2rem .75rem;
+    }
+
+    .section1__datos--title {
+        font-size: 1.1rem;
+    }
+
+    .section1__datos--data {
+        font-size: 1rem;
+    }
+
+    .section1__perfil--title {
+        font-size: 1.4rem;
+        margin: 1.45rem 0 0 0;
+    }
+
+    .section1__perfil--data {
+        font-size: 1rem;
+        margin: 1rem .75rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section1 {
+        height: fit-content;
+        width: calc(350px - 2rem);
+    }
+
+    .section1__datos {
+        margin: 2.5rem 0;
+    }
+
+    .section1__datos--title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section1__datos--data {
+        font-size: 1rem;
+        word-wrap: break-word;
+        margin-top: 10px;
+    }
+
+    .section1__perfil--data {
+        font-size: 1rem;
+        margin: 1rem .75rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section1 {
+        height: fit-content;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .section1 {
+        height: fit-content;
+    }
+}
